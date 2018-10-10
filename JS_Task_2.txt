@@ -1,12 +1,12 @@
 //js_task2_01
 var GetType=function (variable) {
 	if (typeof (variable) ==="string")
-		return "это строка";
+		return "СЌС‚Рѕ СЃС‚СЂРѕРєР°";
 	else 
 		if (typeof (variable) ==="number")
-			return "это число";
+			return "СЌС‚Рѕ С‡РёСЃР»Рѕ";
 		else
-			return "это не строка и не число";
+			return "СЌС‚Рѕ РЅРµ СЃС‚СЂРѕРєР° Рё РЅРµ С‡РёСЃР»Рѕ";
 }
 
 GetType("123");
@@ -19,7 +19,7 @@ var GetArray=function(arr){
 	for (i=0; i<arr.length; i++){
 		console.log(arr[i]);
 	}		
-	console.log("Число элементов: "+arr.length);
+	console.log("Р§РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ: "+arr.length);
 }
 
 GetArray([1,2,3,4]);
@@ -38,7 +38,7 @@ var GetEvenAndOdd=function(arr){
 		else if (typeof arr[i]==="number")
 			even++;
 	}	
-	console.log("четных: "+even+"; нечетных: "+odd+"; нуль:"+zero);
+	console.log("С‡РµС‚РЅС‹С…: "+even+"; РЅРµС‡РµС‚РЅС‹С…: "+odd+"; РЅСѓР»СЊ:"+zero);
 }
 
 GetEvenAndOdd([1,2,3,0]);
@@ -61,7 +61,7 @@ var GetMax=function(arr){
 	for (i=1; i<arr.length; i++)
 		if (arr[i-1]<arr[i])
 			max=arr[i];
-	console.log("Максимальное значение: "+max);
+	console.log("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: "+max);
 }
 
 GetMax([9,3,45]);
@@ -78,11 +78,11 @@ var simleNumbers=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59
 	823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 
 	967, 971, 977, 983, 991, 997];
 if (number>1000)
-	console.log("Невeрные данные.");
+	console.log("РќРµРІeСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ.");
 else if (simleNumbers.includes(number))
-	console.log("Число "+number+" - простое число.");
+	console.log("Р§РёСЃР»Рѕ "+number+" - РїСЂРѕСЃС‚РѕРµ С‡РёСЃР»Рѕ.");
 else if (typeof number==="number")
-	console.log("Число "+number+" - составное число.");
+	console.log("Р§РёСЃР»Рѕ "+number+" - СЃРѕСЃС‚Р°РІРЅРѕРµ С‡РёСЃР»Рѕ.");
 }
 
 IsSimple(13);
