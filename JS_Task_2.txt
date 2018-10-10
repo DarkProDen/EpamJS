@@ -86,5 +86,3 @@ else if (typeof number==="number")
 }
 
 IsSimple(13);
-
-
