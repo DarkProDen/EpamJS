@@ -1,8 +1,3 @@
-var obj={}
-obj.stringParam="qwerty";
-obj.numberParam=123;
-obj.objectParam={objPar: { num: 111, num2: 222}, num: 123};
-
 var CopyObject = function(obj){
     var resultObj={};
     for (var key in obj){
@@ -15,6 +10,11 @@ var CopyObject = function(obj){
     }   
     return resultObj;
 }
+
+var obj={}
+obj.stringParam="qwerty";
+obj.numberParam=123;
+obj.objectParam={objPar: { num: 111, num2: 222}, num: 123};
 
 var obj2=CopyObject(obj);
 obj2["newParam"]="newParamValue";
